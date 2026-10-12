@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PillBar</string>
+    <string name="accessibility_service_label">PillBar 导航小白条</string>
+    <string name="accessibility_summary">在屏幕底部显示一个可调节的导航小白条</string>
+    <string name="accessibility_description">PillBar 通过无障碍服务在屏幕底部绘制一个视觉性的导航小白条（类似 iOS 18 的 Home Indicator）。\n\n本服务仅用于绘制视觉元素，不会拦截或消费任何触摸事件，因此完全保留系统原有的返回、最近任务、Home 等手势动画效果。\n\n权限说明：\n• 不需要 SYSTEM_ALERT_WINDOW（悬浮窗）权限\n• 不需要网络/存储权限\n• 仅使用无障碍服务的 TYPE_ACCESSIBILITY_OVERLAY 与 takeScreenshot 能力\n• 颜色自适应使用 takeScreenshot 在小白条上方区域采样亮度</string>
+
+    <string name="enable_pill">启用小白条</string>
+    <string name="service_status">无障碍服务状态</string>
+    <string name="service_enabled">已启用</string>
+    <string name="service_disabled">未启用（点击下方按钮开启）</string>
+    <string name="open_accessibility">开启无障碍服务</string>
+    <string name="width">宽度</string>
+    <string name="height">高度</string>
+    <string name="bottom_margin">距底部距离</string>
+    <string name="auto_color">根据背景自动黑白</string>
+    <string name="manual_color">手动颜色（关闭自动时生效）</string>
+    <string name="color_black">黑色</string>
+    <string name="color_white">白色</string>
+    <string name="sample_interval">颜色采样间隔</string>
+    <string name="hide_on_desktop">桌面时自动隐藏</string>
+
+    <!-- 沉浸模式 -->
+    <string name="immersive_mode">沉浸模式</string>
+    <string name="immersive_timeout">无操作隐藏延迟（秒）</string>
+
+    <!-- 弹跳动画 -->
+    <string name="bounce_section_title">弹跳动画</string>
+    <string name="bounce_enabled">触碰小白条时弹跳</string>
+    <string name="bounce_amplitude">弹跳幅度</string>
+    <string name="bounce_duration">弹跳持续时间</string>
+    <string name="bounce_easing">速度曲线</string>
+
+    <!-- 出现/消失动画 -->
+    <string name="show_hide_anim">出现/消失动画</string>
+
+    <string name="note_title">使用说明</string>
+    <string name="note_content">• 小白条不会拦截触摸，系统返回 / 最近任务 / Home 等手势与动画完整保留。\n• 颜色自适应依赖 AccessibilityService.takeScreenshot()，在部分厂商 ROM 上可能被限制；若不可用，可关闭自动改用手动黑白。\n• 若系统已开启手势导航，系统本身也会显示一条小白条，本应用的小白条会与之重叠：可在系统设置切换为「3 按键导航」只显示本应用的小白条，或调大「距底部距离」让两者错开。\n• 第一次使用请先点击「开启无障碍服务」并在系统列表中找到 PillBar 启用。\n• 沉浸模式开启后，屏幕无操作一段时间后小白条自动隐藏，触摸屏幕后恢复。\n• 弹跳动画在手指触碰小白条区域时触发。</string>
+</resources>
